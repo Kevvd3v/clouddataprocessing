@@ -52,6 +52,11 @@ Capas solicitadas:
 
 **Evidencia:**  
 
+*Enlace de Lucidchart:*
+https://lucid.app/lucidchart/5a613fc3-54e4-4588-870d-0973be1fe171/edit?viewport_loc=-166%2C-267%2C1977%2C887%2C0_0&invitationId=inv_35781220-677a-4e37-97a9-ef22d39f10be
+
+**Captura del diagrama:**
+
 <img width="1290" height="1025" alt="Diagrama 3 capas" src="https://github.com/user-attachments/assets/21153efe-3256-4775-916f-27c76214c3e0" />
 
 
