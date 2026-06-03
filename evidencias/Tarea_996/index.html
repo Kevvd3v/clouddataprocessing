@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Tarea #996 - Virtualización</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/white.css">
+
+  <style>
+    .reveal h1, .reveal h2, .reveal h3 {
+      color: #1f4e79;
+    }
+
+    .reveal p, .reveal li {
+      font-size: 0.8em;
+      line-height: 1.4;
+    }
+
+    .reveal table {
+      font-size: 0.55em;
+    }
+
+    .small-text {
+      font-size: 0.65em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2>Tarea #996</h2>
+        <h3>Solución estratificada de problemas en TIC y virtualización</h3>
+        <p>Procesamiento de Datos en la Nube</p>
+        <p>Kevin Yahir Chan Caballero</p>
+      </section>
+
+      <section>
+        <h2>Solución estratificada de problemas en TIC</h2>
+        <p>
+          La solución estratificada de problemas en TIC consiste en analizar un sistema
+          por capas o niveles para identificar de forma ordenada dónde se encuentra una falla.
+        </p>
+        <p>
+          Este enfoque permite revisar componentes como hardware, sistema operativo,
+          red, servicios, aplicaciones y usuario final.
+        </p>
+      </section>
+
+      <section>
+        <h2>Características</h2>
+        <ul>
+          <li>Divide el sistema en capas para facilitar el diagnóstico.</li>
+          <li>Permite localizar fallas de forma ordenada.</li>
+          <li>Reduce el tiempo de solución.</li>
+          <li>Facilita el trabajo colaborativo entre equipos técnicos.</li>
+          <li>Puede aplicarse en redes, servidores, aplicaciones y servicios en la nube.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Capas comunes en TIC</h2>
+        <ol>
+          <li>Hardware</li>
+          <li>Sistema operativo</li>
+          <li>Red</li>
+          <li>Servicios</li>
+          <li>Aplicación</li>
+          <li>Usuario final</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Caso de uso</h2>
+        <p>
+          Si un usuario no puede acceder a una aplicación web, se puede analizar el problema por capas:
+        </p>
+        <ul>
+          <li>Verificar si el equipo tiene conexión a internet.</li>
+          <li>Revisar si el DNS resuelve correctamente.</li>
+          <li>Comprobar si el servidor responde.</li>
+          <li>Validar si el backend está activo.</li>
+          <li>Revisar conexión con la base de datos.</li>
+          <li>Confirmar permisos o credenciales del usuario.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Virtualización por interpretación pura</h2>
+        <p>
+          La virtualización por interpretación pura ejecuta las instrucciones de una máquina virtual
+          interpretándolas una por una mediante software.
+        </p>
+        <p>
+          El sistema anfitrión no ejecuta directamente las instrucciones del sistema invitado,
+          sino que un programa las traduce e interpreta.
+        </p>
+      </section>
+
+      <section>
+        <h2>Características</h2>
+        <ul>
+          <li>No depende directamente del hardware físico.</li>
+          <li>Permite alta compatibilidad entre arquitecturas distintas.</li>
+          <li>Es más lenta que otros tipos de virtualización.</li>
+          <li>Se usa cuando se necesita emular sistemas diferentes al hardware real.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Casos de uso y ejemplos</h2>
+        <ul>
+          <li>Emulación de sistemas antiguos.</li>
+          <li>Ejecución de software diseñado para otra arquitectura.</li>
+          <li>Pruebas educativas o de investigación.</li>
+          <li>QEMU en modo emulación completa.</li>
+          <li>Emuladores de consolas antiguas.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Virtualización por recompilación dinámica</h2>
+        <p>
+          La recompilación dinámica traduce bloques de instrucciones del sistema invitado
+          a instrucciones equivalentes que el sistema anfitrión puede ejecutar.
+        </p>
+        <p>
+          A diferencia de la interpretación pura, mejora el rendimiento al traducir bloques de código
+          y reutilizarlos durante la ejecución.
+        </p>
+      </section>
+
+      <section>
+        <h2>Características</h2>
+        <ul>
+          <li>Mejor rendimiento que la interpretación pura.</li>
+          <li>Traduce instrucciones en tiempo de ejecución.</li>
+          <li>Puede reutilizar bloques previamente traducidos.</li>
+          <li>Mantiene buena compatibilidad con diferentes arquitecturas.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Casos de uso y ejemplos</h2>
+        <ul>
+          <li>Emulación con mejor rendimiento.</li>
+          <li>Ejecución de aplicaciones de otra arquitectura.</li>
+          <li>QEMU con traducción dinámica.</li>
+          <li>Rosetta 2 en macOS para ejecutar aplicaciones x86 en Apple Silicon.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Virtualización por hipervisión bare metal</h2>
+        <p>
+          La virtualización por hipervisión bare metal utiliza un hipervisor instalado directamente
+          sobre el hardware físico, sin depender de un sistema operativo anfitrión tradicional.
+        </p>
+        <p>
+          El hipervisor administra los recursos físicos y permite ejecutar varias máquinas virtuales
+          de forma aislada.
+        </p>
+      </section>
+
+      <section>
+        <h2>Características</h2>
+        <ul>
+          <li>Alto rendimiento.</li>
+          <li>Mayor estabilidad.</li>
+          <li>Mejor aislamiento entre máquinas virtuales.</li>
+          <li>Uso común en centros de datos y entornos empresariales.</li>
+          <li>Permite administrar CPU, memoria, almacenamiento y red.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Casos de uso y ejemplos</h2>
+        <ul>
+          <li>Centros de datos.</li>
+          <li>Servidores empresariales.</li>
+          <li>Infraestructura en la nube.</li>
+          <li>Consolidación de servidores.</li>
+          <li>VMware ESXi, Microsoft Hyper-V, Xen, Proxmox VE y KVM.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Comparación general</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Rendimiento</th>
+              <th>Compatibilidad</th>
+              <th>Uso común</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Interpretación pura</td>
+              <td>Bajo</td>
+              <td>Alta</td>
+              <td>Emulación y sistemas antiguos</td>
+            </tr>
+            <tr>
+              <td>Recompilación dinámica</td>
+              <td>Medio</td>
+              <td>Alta</td>
+              <td>Emulación optimizada</td>
+            </tr>
+            <tr>
+              <td>Bare metal</td>
+              <td>Alto</td>
+              <td>Media/Alta</td>
+              <td>Servidores, centros de datos y nube</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Conclusión</h2>
+        <p>
+          La solución estratificada ayuda a diagnosticar problemas tecnológicos de forma ordenada
+          y eficiente.
+        </p>
+        <p>
+          Los distintos tipos de virtualización ofrecen ventajas diferentes: la interpretación pura
+          prioriza compatibilidad, la recompilación dinámica mejora el rendimiento y la hipervisión
+          bare metal ofrece mayor eficiencia para entornos empresariales y de nube.
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true
+    });
+  </script>
+</body>
+</html>
