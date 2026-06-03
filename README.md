@@ -157,6 +157,24 @@ Resultados obtenidos:
 
 <img width="1365" height="726" alt="Hello-World-Docker" src="https://github.com/user-attachments/assets/27f2ddbe-da50-4cf2-84ee-821b97806fb9" />
 
+### Tarea #996 - Investigación sobre virtualización
+
+**Fecha de entrega:** Miércoles 3 de junio  
+
+**Descripción:**  
+Investigación sobre solución estratificada de problemas en TIC y tipos de virtualización.
+
+Temas investigados:
+
+- Solución estratificada de problemas en TIC.
+- Virtualización por interpretación pura.
+- Virtualización por recompilación dinámica.
+- Virtualización por hipervisión bare metal.
+
+**Presentación:**  
+[Ver presentación Tarea #996](https://kevvd3v.github.io/clouddataprocessing/evidencias/Tarea_996/)
+
+**Estado:** Completado.
 
 
 
